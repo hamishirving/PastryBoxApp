@@ -186,118 +186,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzD-ni-a7u">
+                            <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="xMU-Sw-0mv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Jet-eZ-fTf">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7E-iQ-XzE">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                            <state key="normal">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <segue destination="nXF-vj-Thb" kind="unwind" unwindAction="unwindToViewController:" id="lt0-5F-NDC"/>
-                                            </connections>
-                                        </button>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyI-2v-zpS" customClass="DesignableView" customModule="PBApp" customModuleProvider="target">
-                                            <rect key="frame" x="20" y="144" width="280" height="280"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WN-Wg-j51">
-                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
-                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                                    <state key="normal" image="big-top">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5z5-nN-iZQ">
-                                                    <rect key="frame" x="29" y="88" width="82" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cH-D4-sf9">
-                                                    <rect key="frame" x="140" y="0.0" width="140" height="140"/>
-                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                                    <state key="normal" image="big-recent">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-4k-l8T">
-                                                    <rect key="frame" x="140" y="140" width="140" height="140"/>
-                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                                    <state key="normal" image="big-login">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-L1-89w">
-                                                    <rect key="frame" x="0.0" y="140" width="140" height="140"/>
-                                                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
-                                                    <state key="normal" image="big-credits">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="P5n-T7-ugy" kind="presentation" modalTransitionStyle="crossDissolve" id="BGD-uK-9Ci"/>
-                                                    </connections>
-                                                </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsF-PG-72N">
-                                                    <rect key="frame" x="185" y="88" width="51" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46b-PP-Mkb">
-                                                    <rect key="frame" x="189" y="228" width="42" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVT-cv-sCS">
-                                                    <rect key="frame" x="34" y="228" width="72" height="22"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="280" id="8J0-Wz-tN2"/>
-                                                <constraint firstAttribute="height" constant="280" id="Eoy-hW-mIB"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="R7E-iQ-XzE" firstAttribute="top" secondItem="Jet-eZ-fTf" secondAttribute="top" id="B0U-A2-46m"/>
-                                        <constraint firstAttribute="centerY" secondItem="cyI-2v-zpS" secondAttribute="centerY" id="XaH-DS-sxv"/>
-                                        <constraint firstAttribute="centerX" secondItem="cyI-2v-zpS" secondAttribute="centerX" id="XoR-UI-tpe"/>
-                                        <constraint firstItem="R7E-iQ-XzE" firstAttribute="leading" secondItem="Jet-eZ-fTf" secondAttribute="leading" id="YET-Ul-PhK"/>
-                                        <constraint firstAttribute="trailing" secondItem="R7E-iQ-XzE" secondAttribute="trailing" id="d2t-fB-rpk"/>
-                                        <constraint firstAttribute="bottom" secondItem="R7E-iQ-XzE" secondAttribute="bottom" id="jX1-p6-1w1"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="extraLight"/>
-                            </visualEffectView>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-m9-zbK">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSl-dF-4xm" customClass="DesignableView" customModule="PBApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="144" width="280" height="280"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4a-iq-Gw9">
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                                                <state key="normal" image="big-top">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Stories" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PF7-H4-dA8">
+                                                <rect key="frame" x="29" y="88" width="82" height="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbE-9u-J6F">
+                                                <rect key="frame" x="140" y="0.0" width="140" height="140"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                                                <state key="normal" image="big-recent">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW4-8b-RBn">
+                                                <rect key="frame" x="140" y="140" width="140" height="140"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                                                <state key="normal" image="big-login">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVJ-La-SNg">
+                                                <rect key="frame" x="0.0" y="140" width="140" height="140"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="30"/>
+                                                <state key="normal" image="big-credits">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="P5n-T7-ugy" kind="presentation" modalTransitionStyle="crossDissolve" id="67n-sg-0on"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lys-ht-DgZ">
+                                                <rect key="frame" x="185" y="88" width="51" height="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-yB-0G6">
+                                                <rect key="frame" x="189" y="228" width="42" height="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V46-81-yCo">
+                                                <rect key="frame" x="34" y="228" width="72" height="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="NVN-xw-lHc"/>
+                                            <constraint firstAttribute="width" constant="280" id="mSC-5s-4vC"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="ZSl-dF-4xm" secondAttribute="centerY" id="Cny-Mg-jSN"/>
+                                    <constraint firstAttribute="bottom" secondItem="MEL-m9-zbK" secondAttribute="bottom" id="Hab-YF-VYa"/>
+                                    <constraint firstAttribute="centerX" secondItem="ZSl-dF-4xm" secondAttribute="centerX" id="Q7s-9k-WIk"/>
+                                    <constraint firstAttribute="trailing" secondItem="MEL-m9-zbK" secondAttribute="trailing" id="VCL-qM-7bo"/>
+                                    <constraint firstItem="MEL-m9-zbK" firstAttribute="top" secondItem="xMU-Sw-0mv" secondAttribute="top" id="Z2b-pL-W8a"/>
+                                    <constraint firstItem="MEL-m9-zbK" firstAttribute="leading" secondItem="xMU-Sw-0mv" secondAttribute="leading" id="dqt-b8-7MF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UzD-ni-a7u" firstAttribute="top" secondItem="2E8-au-ykx" secondAttribute="top" id="IAl-ab-dP9"/>
-                            <constraint firstItem="UzD-ni-a7u" firstAttribute="leading" secondItem="2E8-au-ykx" secondAttribute="leading" id="UZa-uU-KN8"/>
-                            <constraint firstItem="GgG-VK-2aY" firstAttribute="top" secondItem="UzD-ni-a7u" secondAttribute="bottom" id="Ue3-Jm-4RP"/>
-                            <constraint firstAttribute="trailing" secondItem="UzD-ni-a7u" secondAttribute="trailing" id="sQ4-ad-pUg"/>
+                            <constraint firstAttribute="trailing" secondItem="xMU-Sw-0mv" secondAttribute="trailing" id="ECv-s6-aET"/>
+                            <constraint firstItem="xMU-Sw-0mv" firstAttribute="leading" secondItem="2E8-au-ykx" secondAttribute="leading" id="VfF-hB-hdz"/>
+                            <constraint firstItem="GgG-VK-2aY" firstAttribute="top" secondItem="xMU-Sw-0mv" secondAttribute="bottom" id="dza-GG-MqV"/>
+                            <constraint firstItem="xMU-Sw-0mv" firstAttribute="top" secondItem="2E8-au-ykx" secondAttribute="top" id="rfN-Ci-CSP"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s5W-ld-o7h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="nXF-vj-Thb" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-225" y="998"/>
         </scene>
@@ -605,7 +596,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="awO-Ov-ir3" kind="unwind" unwindAction="unwindToViewController:" id="4NF-bx-htM"/>
+                                                <action selector="closeButtonDidTouch:" destination="P5n-T7-ugy" eventType="touchUpInside" id="ExB-k2-EoU"/>
                                             </connections>
                                         </button>
                                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bN7-8V-qHu" customClass="DesignableView" customModule="PBApp" customModuleProvider="target">
@@ -707,7 +698,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmh-SM-Qeg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="awO-Ov-ir3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-225" y="1691"/>
         </scene>

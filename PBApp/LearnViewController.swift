@@ -41,6 +41,12 @@ class LearnViewController: UIViewController {
         bookImageView.animate()
     }
     
+    @IBAction func closeButtonDidTouch(sender: AnyObject) {
+        dialogView.animation = "fall"
+        dialogView.animateNext {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+    }
     
     
 }
