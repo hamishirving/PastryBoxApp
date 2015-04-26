@@ -642,7 +642,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="learnButtonDidTouch:" destination="P5n-T7-ugy" eventType="touchUpInside" id="BfV-bw-wFS"/>
+                                                        <action selector="learnButtonDidTouch:" destination="P5n-T7-ugy" eventType="touchUpInside" id="ULg-nb-IQX"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KoE-QG-i6C">
@@ -702,10 +702,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="bookImageView" destination="MEe-p9-kgT" id="BVX-ZG-iDC"/>
+                        <outlet property="bookImageView" destination="MEe-p9-kgT" id="mlS-5E-VVa"/>
                         <outlet property="dialogView" destination="bN7-8V-qHu" id="faD-L3-lb1"/>
-                        <outlet property="learnButton" destination="URR-gR-Nby" id="bbL-co-FUm"/>
-                        <outlet property="learnButtonDidTouch" destination="URR-gR-Nby" id="y5p-5A-iMU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qmh-SM-Qeg" userLabel="First Responder" sceneMemberID="firstResponder"/>

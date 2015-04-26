@@ -11,6 +11,7 @@ import UIKit
 class LearnViewController: UIViewController {
 
     @IBOutlet weak var dialogView: DesignableView!
+    @IBOutlet weak var bookImageView: SpringImageView!
 
     
     // The below effectivly replaces the 'autostart' option available in IB with code
@@ -35,6 +36,11 @@ class LearnViewController: UIViewController {
         dialogView.animate()
     }
     
-
+    @IBAction func learnButtonDidTouch(sender: AnyObject) {
+        bookImageView.animation = "pop"
+        bookImageView.animate()
+    }
+    
+    
     
 }
